@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
     private String vendor;
     private String product;
     private int amount;
@@ -20,7 +20,7 @@ public class Invoice {
 
     }
 
-    public Invoice(long id, String vendor, String product, int amount, String date, String action) {
+    public Invoice(Long id, String vendor, String product, int amount, String date, String action) {
         this.id = id;
         this.vendor = vendor;
         this.product = product;
@@ -29,11 +29,11 @@ public class Invoice {
         this.action = action;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
